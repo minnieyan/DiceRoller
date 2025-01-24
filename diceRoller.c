@@ -4,7 +4,7 @@
 
 int main(void) {
     srand(time(NULL));
-    int diceArray[] = {4, 6, 8, 10, 12, 20, 100}; //This array holds the types of dice that can be rolled.
+    const int diceArray[] = {4, 6, 8, 10, 12, 20, 100}; //This array holds the types of dice that can be rolled.
     int diceCount[] = {0, 0, 0, 0, 0, 0, 0}; //This array will holds the amount of times each type of dice is going to be rolled as requested by the user.
     int i, finalSum = 0, diceSum = 0; //diceSum holds the sum of all dice rolls of a certain type. finalSum holds the final total of all dice rolled.
 
