@@ -19,7 +19,7 @@ int main(void) {
     scanf("%c", &justSum);
 
     for (i = 0; i < 7; i++) { //Rolls the dice and prints the value. Keeps rolling until the dice roll count for that type is exhausted. Rolls the next type.
-        for (;diceCount[i] > 0; diceCount[i] = diceCount[i] - 1) {
+        for (;diceCount[i] > 0; diceCount[i] -= 1) {
             int randValue = rand() % diceArray[i] + 1;
             if (justSum == 'Y' || justSum == 'y') {
                 printf("d%d Roll: %d\n", diceArray[i], randValue);
